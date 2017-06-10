@@ -19,5 +19,8 @@
     <orderEntry type="library" name="jsoup-1.10.2" level="project" />
     <orderEntry type="library" name="jsoup-1.10.2-javadoc" level="project" />
     <orderEntry type="library" name="jsoup-1.10.2-sources" level="project" />
+    <orderEntry type="library" name="je-7.4.5" level="project" />
+    <orderEntry type="library" name="JEJConsole" level="project" />
+    <orderEntry type="library" name="RepJEJConsole" level="project" />
   </component>
 </module>
