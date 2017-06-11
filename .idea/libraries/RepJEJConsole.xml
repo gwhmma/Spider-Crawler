@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RepJEJConsole">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/libs/je/RepJEJConsole.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

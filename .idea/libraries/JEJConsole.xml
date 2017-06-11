@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JEJConsole">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/libs/je/JEJConsole.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
