@@ -3,6 +3,8 @@ package com.example.fundamental;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
+import org.apache.http.client.config.CookieSpecs;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -56,7 +58,9 @@ public class DownloadFile {
     {
         String filePath = null;
         //生成httpclient对象并设置参数
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+        RequestConfig globalConfig = RequestConfig.custom().setCookieSpec(CookieSpecs.IGNORE_COOKIES).build();
+        CloseableHttpClient httpClient = HttpClients.custom().setDefaultRequestConfig(globalConfig).build();
+        //CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(url);
         HttpResponse response;
         // 执行http get 请求
@@ -73,7 +77,8 @@ public class DownloadFile {
             //得到响应内容
             byte[] responesBody = EntityUtils.toByteArray(entity);
             //根据URL生成保存时的文件名
-            filePath = "d:\\temp\\" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
+            filePath = "D:\\temp\\" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
+           // filePath = "D:\\temp" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
             saveToLocal(responesBody,filePath);
         }
         catch (IOException e)

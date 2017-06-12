@@ -60,10 +60,10 @@ public class Crawler {
             }
         }
     }
-/*
+
     public static void main(String[] args)
     {
         Crawler crawler = new Crawler();
         crawler.crawling(new String[]{"http://www.sina.com.cn"});
-    }*/
+    }
 }

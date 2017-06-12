@@ -22,5 +22,7 @@
     <orderEntry type="library" name="je-7.4.5" level="project" />
     <orderEntry type="library" name="JEJConsole" level="project" />
     <orderEntry type="library" name="RepJEJConsole" level="project" />
+    <orderEntry type="library" name="commons-logging-1.2 (3)" level="project" />
+    <orderEntry type="library" name="commons-logging-1.2-javadoc (4)" level="project" />
   </component>
 </module>
