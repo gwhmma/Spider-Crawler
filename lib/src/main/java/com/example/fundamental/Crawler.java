@@ -33,8 +33,8 @@ public class Crawler {
             //定义过滤器，提取以http://www.sina.com开头的链接
             LinkFilter filter = new LinkFilter() {
                 @Override
-                public boolean accept(String url) {
-                    if (url.startsWith("http://www.sina.com.cn"))
+                public boolean accept(String url) {               // http://www.sina.com.cn
+                    if (url.startsWith("http://www.sina.com.cn")) //  http://www.163.com
                         return true;
                     else
                     return false;
@@ -60,10 +60,11 @@ public class Crawler {
             }
         }
     }
-
+/*
     public static void main(String[] args)
     {
         Crawler crawler = new Crawler();
         crawler.crawling(new String[]{"http://www.sina.com.cn"});
     }
+    */
 }

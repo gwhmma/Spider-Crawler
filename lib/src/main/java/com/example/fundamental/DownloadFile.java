@@ -76,8 +76,8 @@ public class DownloadFile {
             HttpEntity entity = response.getEntity();
             //得到响应内容
             byte[] responesBody = EntityUtils.toByteArray(entity);
-            //根据URL生成保存时的文件名
-            filePath = "D:\\temp\\" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
+            //根据URL生成保存时的文件名   D:\CrawlerDowload\temp
+            filePath = "D:\\CrawlerDowload\\temp\\" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
            // filePath = "D:\\temp" + getFileNameByUrl(url,response.getFirstHeader("Content-Type").getValue());
             saveToLocal(responesBody,filePath);
         }
